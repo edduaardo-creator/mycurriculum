@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(219, 219, 219);
+            background-color: rgb(19, 20, 20);
+        }
+
+        .nav {
+            height: 100%;
+            width: 150px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgb(184, 34, 64);
+            padding-top: 25px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 1px;
+
+        }
+
+        .nav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: rgb(94, 0, 0);
+            display: block;
+        }
+
+        .nav a:hover {
+            color: rgb(25, 26, 25);
+        }
+
+        .main {
+            margin-left: 160px;
+            font-size: 28px;
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .nav {
+                padding-top: 15px;
+
+            }
+
+            .nav a {
+                font-size: 18px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <img src="data:image/jpeg;base64,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"
+            alt="">
+        <a href="sobre.html">Sobre</a>
+        <a href="serviços.html">Serviços</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="contato.html">Contato</a>
+        
+        <div>
+        <img src="https://th.bing.com/th/id/Rd41e0ebe818050409bbf741660bbaf7f?rik=mk9FQE4OoLKDLw&pid=ImgRaw"
+            width="50px" height="50px" alt="">
+            <h1><a href="https://www.instagram.com/_edduaardo/">Meu instagram</a></h1>
+        </div>
+        <div>
+        <img src="https://th.bing.com/th/id/OIP.46goeWrG5eWVufJGs5vjVwHaEK?pid=ImgDet&rs=1" width="50px" height="50px"
+            alt="">
+            <h1><a href="https://github.com/edduaardo-creator">Meu Github</a></h1>
+        </div>
+        <div>
+        <img src="https://www.incimages.com/uploaded_files/image/1920x1080/linkedin-logo-1940x900_34994.jpg"
+            width="50px" height="50px" alt="">
+            <h1><a href="https://www.linkedin.com/in/eduardo-luiz-da-s-8390791b7/">Meu linkedin</a></h1>
+        </div>
+        <div>
+        <img src="https://th.bing.com/th/id/R60059ac4b3d657d22b8c40ab5208e684?rik=r0f7BAePqvHxQA&riu=http%3a%2f%2fs.glbimg.com%2fpo%2ftt%2ff%2foriginal%2f2013%2f06%2f07%2faprenda_como_impedir_que_algum_contato_seu_veja_suas_publicacoes_no_facebook.png&ehk=c%2fOHhMKCW2r3M%2ffxnCIv3ujNHCdPRl5nkTvmAbI3lWM%3d&risl=&pid=ImgRaw"
+            width="50px" height="50px" alt="">
+            <h1><a href="https://www.facebook.com/eduardo.l.silveira.3/">Meu facebook</a></h1>
+        </div>
+        </div>
+    
+
+    <div class="main">
+        <h2>Meu Curriculum</h2>
+        <p>sou uma pessoa comunicativa</p>
+        <p>gosto de jogar futebol</p>
+        <p>curto andar de lancha</p>
+        <img src="https://th.bing.com/th/id/OIP.uHUD-zK4tGq1GUcgHgK0vgHaD1?pid=ImgDet&rs=1" height="300" width="300" alt="">
+        <img src="https://th.bing.com/th/id/OIP.URMb2lE9B5NejmjfR7RlgAHaEL?pid=ImgDet&rs=1" height="300" width="300" alt="">
+        
+    </div>
+
+</body>
+
+</html>
